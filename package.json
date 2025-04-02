@@ -1,0 +1,10 @@
+{
+  "devDependencies": {
+    "@fullhuman/postcss-purgecss": "^6.0.0",
+    "clean-css-cli": "^5.6.3"
+  },
+  "scripts": {
+    "purgecss": "purgecss --css src/styles.css --content src/**/*.html --output dist/styles.css",
+    "minify-css": "cleancss -o dist/styles.min.css dist/styles.css"
+  }
+}

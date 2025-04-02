@@ -1,0 +1,160 @@
+/* Style du bouton d'envoi */
+
+.boutonCont span {
+
+  font-family: 'Diphylleia', sans-serif;
+
+}
+
+
+
+.boutonCont {
+
+  display: inline-block;
+
+  padding: 7px 9px;
+
+  background-color: #0588F0;
+
+  border-radius: 18px;
+
+  border: 4px double #1f69ec;
+
+  text-align: center;
+
+  font-size: 16px;
+
+  font-weight: bold;
+  
+  color:black;
+
+  cursor: pointer;
+
+  transition: all 0.5s ease-in-out;
+
+}
+
+
+
+.boutonCont:hover {
+
+  background-color: green;
+
+  border: 2px solid #1f69ec;
+
+  box-shadow: 5px 5px 10px rgba(0, 128, 0, 0.541);
+
+  font-size: 18px;
+
+}
+
+
+
+/* Centrage du formulaire */
+
+.contactee {
+
+  margin: auto 150px auto;
+
+  min-width: 350px;
+
+  width: 40% !important;
+
+}
+
+
+
+/* Style du titre */
+
+.titreforme {
+
+  font-size: 30px !important;
+
+  text-align: center !important;
+
+  font-family: 'Diphylleia', sans-serif !important;
+
+  font-weight: bold !important;
+
+  display: block;
+
+  margin-bottom: 40px !important;
+
+}
+
+
+
+/* Style des champs de formulaire */
+
+.form-control {
+
+  width: 100% !important;
+
+  padding: 10px;
+
+  font-size: 16px;
+
+  border-radius: 5px;
+
+  border: 1px solid #ccc;
+
+}
+
+
+
+/* Texte CGU */
+
+.cgu {
+
+  font-size: 11px;
+
+  font-weight: bold;
+
+}
+
+
+
+/* Responsive */
+
+
+@media (min-width: 896px) {
+  .titreforme {
+    margin-top: 65px !important;
+    }
+}
+
+@media (max-width: 770px) {
+
+     .contactee {
+    margin: auto 150px auto;
+    width: 70% !important;
+
+  }
+  .titreforme{
+    font-size: 25px !important;
+    font-weight:  bold !important;
+    margin-bottom: 50px !important;
+    margin-top: 10px !important;
+    
+  }
+
+  .form-control{
+    width: 70% !important;
+    height: 30% !important;
+  }
+  .cgu {
+
+    font-size: 9px;
+
+    font-family: 'Poppins', sans-serif;
+
+  }
+
+  .boutonCont {
+
+    width: 40%;
+
+  }
+
+}
+

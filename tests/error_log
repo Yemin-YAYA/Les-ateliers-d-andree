@@ -1,0 +1,4 @@
+[25-Feb-2025 08:41:33 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Test\WebTestCase" not found in /home/yaye3505/lesateliersdandree.fr/tests/ContactControllerTest.php:7
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/tests/ContactControllerTest.php on line 7

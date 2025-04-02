@@ -1,0 +1,190 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}
+
+	Formulaire de connexion
+
+{% endblock %}
+
+
+
+{% block body %}
+
+	<main class="container-fluid conexcont">
+
+		<div class="container">
+
+			<div class="row center">
+
+				<div class="col-md-3" aria-hidden="true"></div>
+
+				<div class="col-md-6">
+
+					<h1 class="mb-5 titreform" title="Connexion">Espace Administrateur</h1>
+
+					<form class="logform" method="post" enctype="multipart/form-data">
+
+						{% if error %}
+
+							<div class="alert alert-danger" role="alert">
+
+								{% if error.messageKey == 'Invalid credentials.' %}
+
+									Identifiant ou mot de passe incorrect.
+
+								{% else %}
+
+									{{ error.messageKey|trans(error.messageData, 'security') }}
+
+								{% endif %}
+
+							</div>
+
+						{% endif %}
+
+						{% if app.user %}
+
+							<div class="mb-2">
+
+								Vous êtes connecté en tant que
+
+								{{ app.user.userIdentifier }},
+
+								<a href="{{ path('app_logout') }}">Déconnexion</a>
+
+							</div>
+
+						{% endif %}
+
+						<div class="form-group mb-2">
+
+		{# Afficher les messages en lien avec l'envois de l'email de reinitialisation du mot de passe. #}
+
+							{% for message in app.flashes('success') %}
+
+								<div class="alert alert-success mt-2">
+
+									{{ message }}
+
+								</div>
+
+							{% endfor %}
+
+							{% for message in app.flashes('dangers') %}
+
+								<div class="alert alert-dangers">
+
+									{{ message }}
+
+								</div>
+
+							{% endfor %}
+
+					{# Afficher les messages en lien avec la modification du mot de passe #}
+
+								{% for message in app.flashes('succes') %}
+
+								<div class="alert alert-success mt-2">
+
+									{{ message }}
+
+								</div>
+
+							{% endfor %}
+
+							{% for message in app.flashes('danger') %}
+
+								<div class="alert alert-danger">
+
+									{{ message }}
+
+								</div>
+
+							{% endfor %}
+
+				{# Partie du formulaire de login #}
+
+							<input type="email" class="form-control" id="inputEmail" name="email" autocomplete="email" placeholder="Adresse e-mail" aria-label="Saisissez votre adresse e-mail" title="Adresse e-mail" required autofocus/>
+
+						</div>
+
+						<div class="form-group mb-3">
+
+							<input type="password" class="form-control" id="inputPassword" name="password" autocomplete="current-password" placeholder="Mot de passe" aria-label="Saisissez votre mot de passe" title="Mot de passe" required/>
+
+						</div>
+
+
+
+
+
+						<div class="form-group mb-3">
+
+							<div class="d-flex align-items-center">
+
+								<input type="checkbox" class="form-check-input me-2" id="rememberMe" name="_remember_me"/>
+
+								<label class="form-check-label remember" for="rememberMe" title="Se souvenir de moi" aria-label="Se souvenir de moi">Se souvenir de moi</label>
+
+							</div>
+
+						</div>
+
+
+
+						{% set errorMessage = app.flashes('error')|first %}
+
+						{% if errorMessage %}
+
+							<div class="alert alert-danger">
+
+								{{ errorMessage }}
+
+							</div>
+
+						{% endif %}
+
+
+
+						<input type="hidden" name="_csrf_token" value="{{ csrf_token('authenticate') }}">
+
+
+
+						<div class="row d-flex justify-content-center spacebot">
+
+							<div class="col-md-5 mb-1 d-flex justify-content-center">
+
+								<button type="submit" class="boutonLog" title="Se connecter" aria-label="Se connecter">
+
+									<span>Connexion</span>
+
+								</button>
+
+							</div>
+
+							
+
+							<p>
+
+								<a id="mpoublie" href="{{ path('forgotten_password') }}"  title="Reinitialiser le mot de passe" aria-label="redirection ver le formulaire pour reinitialiser le mot de passe">Mot de passe oublié</a>
+
+							</p>
+
+						</div>
+
+					</form>
+
+				</div>
+
+				<div class="col-md-3" aria-hidden="true"></div>
+
+			</div>
+
+		</div>
+
+	</main>
+
+{% endblock %}
+

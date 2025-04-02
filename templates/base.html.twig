@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="{{ app.request.locale }}">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<meta name="robots" content="index, follow">
+		<meta name="description" content="{% block meta_description %}Les Ateliers d'Andrée, Couture, Création, Sublimation. L’excellence du sur-mesure, la beauté de la personnalisation.{% endblock %}">
+
+		<title>
+			{% block title %}Les Ateliers D'Andrée
+			{% endblock %}
+		</title>
+
+		<link
+		rel="canonical" href="https://lesateliersdandree.fr/">
+
+		<!-- Favicon et icônes -->
+		<link rel="icon" href="{{ asset('divers/images/favicon.ico') }}?v={{ random() }}" type="image/x-icon" />
+		<link rel="icon" type="image/png" href="{{ asset('divers/images/favicon.png') }}" sizes="32x32"/>
+		<link rel="apple-touch-icon" sizes="180x180" href="{{ asset('divers/images/logo-apple.png') }}"/>
+
+		<!-- Données structurées pour le logo -->
+		<script type="application/ld+json">
+			{
+			  "@context": "https://schema.org",
+			  "@type": "Organization",
+			  "name": "Les Ateliers D'Andrée",
+			  "url": "https://lesateliersdandree.fr/",
+			  "logo": "https://lesateliersdandree.fr/divers/images/logo-apple.png"
+			}
+		</script>
+
+		<!-- Préconnexion au domaine pour un chargement plus rapide -->
+		<link
+		rel="preconnect" href="https://fonts.cdnfonts.com" crossorigin>
+
+		<!-- Import de la police Diphylleia via link -->
+		<link
+		href="https://fonts.cdnfonts.com/css/diphylleia" rel="stylesheet">
+
+		<!-- Import des polices -->
+		<link href="https://fonts.cdnfonts.com/css/diphylleia" rel="stylesheet" crossorigin="anonymous">
+		<link
+		href="https://fonts.cdnfonts.com/css/poppins" rel="stylesheet" crossorigin="anonymous">
+
+
+		<!-- Les CSS de Bootstrap et Font Awesome avec integrity et crossorigin -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+
+		<link
+		rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+		<!-- CSS interne -->
+		<link rel="stylesheet" href="/assets/styles/css/index.css">
+		<link rel="stylesheet" href="/assets/styles/css/header.css">
+		<link rel="stylesheet" href="/assets/styles/css/footer.css">
+		<link rel="stylesheet" href="/assets/styles/css/show.css">
+		<link rel="stylesheet" href="/assets/styles/css/rubrik.css">
+		<link rel="stylesheet" href="/assets/styles/css/contact.css">
+		<link rel="stylesheet" href="/assets/styles/css/login.css">
+		<link rel="stylesheet" href="/assets/styles/css/rgpd.css">
+		<link rel="stylesheet" href="/assets/styles/css/register.css">
+		<link rel="stylesheet" href="/assets/styles/css/show.css">
+		<link
+		rel="stylesheet" href="/assets/styles/css/resetPass.css">
+
+		<!-- Inclusion du script tarteaucitron.js -->
+
+		<script src="{{ asset('tarteaucitron/tarteaucitron.js') }}" defer></script>
+
+		<!-- Initialisation de Tarteaucitron -->
+		<script type="text/javascript">
+			document.addEventListener("DOMContentLoaded", function () {
+tarteaucitron.init({ // Configurations pour tarteaucitron
+});
+
+tarteaucitron.job = tarteaucitron.job || [];
+tarteaucitron.job.push('gtag');
+});
+		</script>
+	</head>
+	<body>
+		{% include 'elements/header.html.twig' %}
+		<main>
+			{% block body %}{% endblock %}
+		</main>
+		{% include 'elements/footer.html.twig' %}
+
+		<!-- Script inline -->
+		<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+		<script>
+			document.addEventListener("DOMContentLoaded", function () {
+const hamburgerButton = document.querySelector(".nav-toggler");
+const navigation = document.querySelector("nav");
+hamburgerButton.setAttribute('aria-expanded', 'false');
+hamburgerButton.addEventListener("click", function () {
+const isExpanded = hamburgerButton.getAttribute('aria-expanded') === 'true';
+navigation.classList.toggle("active");
+hamburgerButton.classList.toggle("active");
+hamburgerButton.setAttribute('aria-expanded', ! isExpanded);
+});
+});
+		</script>
+
+		<script>
+			// Fonction pour initialiser la carte
+function initMap() { // Initialisation de la carte centr�e sur les coordonn�es sp�cifi�es
+var map = L.map('map').setView([
+46.32523387280255, -0.4779290002586512
+], 13);
+// Charger et afficher les tuiles OpenStreetMap
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {attribution: '� OpenStreetMap contributors'}).addTo(map);
+
+// Ajout du marqueur
+L.marker([46.32523387280255, -0.4779290002586512]).addTo(map).bindPopup("3 Chemin des Coteaux de Ribray 79000 NIORT").openPopup();
+}
+
+// L'API Intersection Observer pour charger la carte de mani�re diff�r�e
+document.addEventListener("DOMContentLoaded", function () {
+var mapContainer = document.getElementById('map');
+
+var options = {
+root: null,
+rootMargin: '0px',
+threshold: 0.1
+};
+
+var observer = new IntersectionObserver(function (entries, observer) {
+entries.forEach(function (entry) {
+if (entry.isIntersecting) {
+initMap(); // Initialiser la carte lorsque le conteneur est visible
+observer.unobserve(entry.target); // Arr�ter d'observer apr�s l'initialisation
+}
+});
+}, options);
+observer.observe(mapContainer);
+});
+		</script>
+		<!-- Inclusion de Bootstrap -->
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+	</body>
+</html>

@@ -1,0 +1,20 @@
+[25-Feb-2025 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Controller\AbstractController" not found in /home/yaye3505/lesateliersdandree.fr/src/Controller/ContactController.php:16
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Controller/ContactController.php on line 16
+[25-Feb-2025 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Controller\AbstractController" not found in /home/yaye3505/lesateliersdandree.fr/src/Controller/PostController.php:20
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Controller/PostController.php on line 20
+[25-Feb-2025 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Controller\AbstractController" not found in /home/yaye3505/lesateliersdandree.fr/src/Controller/RegistrationController.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Controller/RegistrationController.php on line 15
+[25-Feb-2025 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Controller\AbstractController" not found in /home/yaye3505/lesateliersdandree.fr/src/Controller/RgpdController.php:9
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Controller/RgpdController.php on line 9
+[25-Feb-2025 08:41:43 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Bundle\FrameworkBundle\Controller\AbstractController" not found in /home/yaye3505/lesateliersdandree.fr/src/Controller/SecurityController.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Controller/SecurityController.php on line 18

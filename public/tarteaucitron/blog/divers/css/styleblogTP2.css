@@ -1,0 +1,138 @@
+
+/* Gestion CSS BLOG Auteur Yemin */
+
+/* Sommaire
+    0.BODY
+    1.HEADER
+    2.MAIN
+    3.FOOTER */
+
+/* body*/
+
+body{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    padding:0%; /*permet de définir les différents écarts de remplissage sur les quatre côtés d'un élément*/
+    background-color:rgba(138, 137, 135, 0.216);
+   
+}
+
+/*header*/
+
+header{ 
+    background-color: rgba(250, 235, 215, 0.3);   
+    padding:5px; 
+}
+
+#logo-blog{
+      margin-right:20px;
+      width: 60px ;
+      height: 60px;
+
+}
+
+.logo{
+    display:flex;
+    align-items: center;
+    margin-right:auto;
+}
+h1{  
+  
+    font-size: 38px; 
+    text-decoration: underline; /*pour « décorer » le texte en ajoutant une ligne pouvant être positionnée sous, sur ou à travers le texte*/
+    color: rgb(152, 113, 33);
+    margin:0;
+    font-family: cursive;
+}
+
+
+nav ul{
+    color:  rgba(147, 126, 85, 0.818);
+    list-style-type: none; /*permet de définir l'apparence de la puce d'un élèments list*/
+    padding: 0px;
+    margin:50px;
+    margin-left: 300px;
+}
+
+nav ul li{
+    margin-right: 20px; /*définit l'espace horizontal à droite qui formera la marge à droite*/
+}
+nav ul li a{
+    text-decoration: none; /*permet de gérer la police le surlignement etc*/
+    font-size: 14px;
+    color:  rgba(154, 141, 117, 0.851);
+    text-shadow: black 0.1em 0.1em 0.1em; /*permet de rajouter de l'ombre au texte ou du relief*/
+}
+
+/*main*/
+
+main{
+    padding: 5px;
+}
+
+h2{
+    text-decoration: underline;
+    color: rgb(152, 113, 33);
+    font-size: 30px;
+    font-family:cursive;
+    font-family:serif
+}
+
+
+.container{
+    padding: 5px; 
+    margin: 10px; /*permet de gerer les marges des côtés*/
+    display:flex; /*definie le type d'affichage*/
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:17px;
+    border: 2px solid blue;
+}
+
+
+
+.container .article {
+    margin-top: 70px; /* Réduire la marge au-dessus de l'élèment*/
+    margin-right: 40px; /*élément définit l'espace horizontal à droite qui formera la marge à droite*/
+    display: flex;
+    flex-direction:row;
+    border: 2px solid red;
+}
+
+
+.container .article .article1 .date{
+    font-size:13px; /*regle la taille du texte*/
+    color:rgba(39, 37, 32, 0.722);
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-shadow: gray 0.1em 0.1em 0.2em;
+    border: 1px solid yellow;
+}
+.container .article img {
+    max-width: 50%; /*permet de dimensionner l'image pour qu'elle ne prennent pas plus de 50% de la page*/
+    height: 300px; /*permet de dimensionner la hauteur de'image*/
+    margin-left: 20px; /* définit l'espace horizontal à gauche qui formera la zone de marge à gauche de l'élément. On peut avoir une marge gauche négative qui rapproche l'élément de ses voisins ou une marge positive qui l'en écarte.*/
+    border-radius: 30px;/*permet de crée un arrondis à notre image*/
+    border: 1px solid brown;
+}
+
+
+/*footer*/
+
+footer{
+    margin-top: 50px;
+    background-color: rgba(250, 235, 215, 0.648);
+    color: rgba(56, 43, 43, 0.538);
+    padding: 0;
+    width: 100%;
+    text-align:center; /*définit l'alignement horizontal d'un élément de bloc ou de la boîte d'une cellule de tableau*/
+    font-size: 11px;
+}
+
+.social-media{
+    display: flex;  
+    justify-content:center   
+}
+
+.social-media img{
+    width: 30px;
+    height: 30px;
+    margin-left:0;      
+}

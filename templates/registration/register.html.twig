@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	Formulaire d'inscription
+{% endblock %}
+
+{% block body %}
+	<div class="container-fluid formul">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-2" aria-hidden="true"></div>
+				<div class="col-md-8">
+					<h1 class="mb-5 titreform" aria-label="Formulaire d'inscription">Formulaire d'inscription</h1>
+
+					<!--Section pour le formulaire-->
+					<form class="sizeform" method="post" enctype="multipart/form-data">
+						{{ form_errors(registrationForm) }}
+						{{ form_start(registrationForm) }}
+						{{ form_widget(registrationForm._token) }}
+
+						<div class="mb-3">
+							{{ form_widget(registrationForm.lastname, { attr: { class: 'form-control', placeholder: 'Nom','aria-label': 'Nom'} }) }}
+							{{ form_errors(registrationForm.lastname) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.firstname, { attr: { class: 'form-control', placeholder: 'Prénom','aria-label': 'Prénom' } }) }}
+							{{ form_errors(registrationForm.firstname) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.email, { attr: { class: 'form-control', placeholder: 'Email','aria-label': 'Email' } }) }}
+							{{ form_errors(registrationForm.email) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.pseudo, { attr: { class: 'form-control', placeholder: 'Pseudo', 'aria-label': 'Pseudo'} }) }}
+							{{ form_errors(registrationForm.pseudo) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.city, { attr: { class: 'form-control', placeholder: 'Ville', 'aria-label': 'ville'} }) }}
+							{{ form_errors(registrationForm.city) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.avatar, { attr: { class: 'form-control' }, type: 'file', mapped: false }) }}
+
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.country, { attr: { class: 'form-control', placeholder: 'Pays','aria-label':'Pays' } }) }}
+							{{ form_errors(registrationForm.country) }}
+						</div>
+						<div class="mb-3">
+							{{ form_widget(registrationForm.plainPassword, { label: 'Password', attr: { class: 'form-control', placeholder: 'Entrez votre mot de passe','aria-label': 'Entrez votre mot de passe'} }) }}
+							{{ form_errors(registrationForm.plainPassword) }}
+						</div>
+
+						<div class="form-check mb-3 d-flex align-items-center">
+							{{ form_widget(registrationForm.agreeTerms, { id: 'agreeTerms', attr: { class: 'form-check-input mr-2 mt-0' } }) }}&ensp;
+							<label class="form-check-label" for="agreeTerms">
+								J'accepte
+								<a href="{{ path('app_rgpd') }}" title="Redirection ver les mentions obligatoires">la politique de confidentialité et les mentions légales</a>
+							</label>
+						</div>
+
+
+						<!-- Section pour les boutons-->
+						<div class="row mb-5 d-flex justify-content-center">
+							<div class="col-md-5 d-flex justify-content-center">
+								<button type="submit" class="boutonRegist" title="S'inscrire" aria-label="Envoyer le formulaire">
+									<span>S'inscrire</span>
+
+								</button>
+							</div>
+
+							<div class="p mt-2">
+								Si vous avez un compte ?
+								<a class="redirconnexion" href="{{ path('app_login') }}" title="Se connecter" aria-label="Envoyer le formulaire">Connecter-vous</a>
+
+							</div>
+						</div>
+						{{ form_end(registrationForm) }}
+					</form>
+				</div>
+				<div class="col-md-2" aria-hidden="true"></div>
+			</div>
+		</div>
+	</div>
+{% endblock %}

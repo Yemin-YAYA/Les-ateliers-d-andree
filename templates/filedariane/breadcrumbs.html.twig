@@ -1,0 +1,13 @@
+<nav id="breadcrumb" style="--bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=%22http://www.w3.org/2000/svg%22 width=%228%22 height=%228%22%3E%3Cpath d=%22M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z%22 fill=%22%236c757d%22/%3E%3C/svg%3E');" aria-label="breadcrumb">
+<ol class="breadcrumb">
+    {% for breadcrumb in breadcrumbs %}
+      <li class="breadcrumb-item{% if loop.last %} active{% endif %}">
+        {% if loop.last %}
+          {{ breadcrumb.label }}
+        {% else %}
+          <a id="breadcrumbA"href="{{ breadcrumb.url }}">{{ breadcrumb.label }}</a>
+        {% endif %}
+      </li>
+    {% endfor %}
+  </ol>
+</nav>

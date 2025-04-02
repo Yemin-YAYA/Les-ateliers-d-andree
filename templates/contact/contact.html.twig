@@ -1,0 +1,115 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}Formulaire de contact{% endblock %}
+
+
+
+{% block body %}
+
+	<div class="d-flex flex-column min-vh-100">
+		{% if breadcrumbs is defined %}
+			<div class="d-flex justify-content-start ps-3">
+				{% include 'filedariane/breadcrumbs.html.twig' %}
+			</div>
+		{% endif %}
+
+
+		<div class="flex-grow-1 d-flex align-items-center justify-content-center">
+
+			<!-- Colonne centrale contenant le formulaire -->
+
+			<div class="col-md-6 col-lg-6 contactee">
+
+				<h1 class="mb-3 titreforme text-center" title="Pour me contacter" aria-label="Formulaire de contact">
+
+					Contactez-moi
+
+				</h1>
+
+
+
+				{# Message de réussite d'envoi du formulaire de contact #}
+
+				{% for message in app.flashes('success') %}
+
+					<div class="alert alert-success mt-2">
+
+						{{ message }}
+
+					</div>
+
+				{% endfor %}
+
+
+<form method="post" enctype="multipart/form-data">
+    {{ form_start(formContact) }}
+    {{ form_widget(formContact._token) }}
+
+    <!-- Nom -->
+    <div class="form-outline mb-3">
+        {{ form_widget(formContact.name, {
+            attr: { class: 'form-control w-75 mx-auto', placeholder: 'Nom', 'aria-label': 'Nom', title: 'Nom' }
+        }) }}
+    </div>
+
+    <!-- Email -->
+    <div class="form-outline mb-3">
+        {{ form_widget(formContact.email, {
+            attr: { class: 'form-control w-75 mx-auto', placeholder: 'Adresse Mail', 'aria-label': 'Adresse Mail', title: 'Adresse-mail' }
+        }) }}
+    </div>
+
+    <!-- Raison du contact -->
+    <div class="form-outline mb-3">
+        {{ form_widget(formContact.raison, {
+            attr: { class: 'form-control w-75 mx-auto', placeholder: 'Motif du contact', 'aria-label': 'Raison du contact', title: 'Raison du contact' }
+        }) }}
+    </div>
+
+    <!-- Message -->
+    <div class="form-outline mb-3">
+        {{ form_widget(formContact.message, {
+            attr: { class: 'form-control w-75 mx-auto', placeholder: 'Message', rows: '6', style: 'height: 150px;', 'aria-label': 'Message', title: 'Message' }
+        }) }}
+    </div>
+
+    <!-- Ajout du champ reCAPTCHA -->
+    <div class="form-outline mb-3">
+        {{ form_widget(formContact.captcha) }}
+    </div>
+
+    <div class="cgu mb-2 text-center">
+        Aucune donnée personnelle n’est conservée par ce formulaire.
+    </div>
+
+    <!-- Bouton d'envoi -->
+    <div class="text-center d-flex justify-content-center">
+        <button type="submit" class="boutonCont" title="Envoyer" aria-label="Envoyer la demande de contact">
+            <span>Envoyer 📩</span>
+        </button>
+    </div>
+
+</form>
+
+<script src="https://www.google.com/recaptcha/api.js?render=6LednesqAAAAAMXZSeIFEuRLwzA3Bd-XT4bxoIBu"></script>
+<script>
+    grecaptcha.ready(function() {
+        document.querySelector('form').addEventListener('submit', function(event) {
+            event.preventDefault();
+            grecaptcha.execute('6LednesqAAAAAMXZSeIFEuRLwzA3Bd-XT4bxoIBu', { action: 'contact' }).then(function(token) {
+                let input = document.createElement('input');
+                input.setAttribute('type', 'hidden');
+                input.setAttribute('name', 'g-recaptcha-response');
+                input.setAttribute('value', token);
+                event.target.appendChild(input);
+                event.target.submit();
+            });
+        });
+    });
+</script>
+
+
+{% endblock %}
+

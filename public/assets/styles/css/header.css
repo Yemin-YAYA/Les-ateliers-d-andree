@@ -1,0 +1,290 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.bord {
+  background: linear-gradient(90deg, rgb(182 145 102 / 95%) 17%, rgb(246 244 235 / 95%) 100%);
+}
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+.zindex {
+  z-index: 1;
+  position: fixed;
+  width: 100vw;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  transform: translateY(-100%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+}
+li {
+  list-style-type: none;
+}
+
+/* Home Section */
+.home {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Navigation burger */
+.nav-toggler {
+  position: fixed;
+  z-index: 10;
+  top: 30px;
+  left: 30px;
+  height: 50px;
+  width: 50px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: transparent;
+}
+.line {
+  position: fixed;
+  display: block;
+  width: 2%;
+  height: 2px;
+  background: black;
+  transition: transform 0.3s ease-out, opacity 0.1s ease-out;
+}
+.l1 {
+  transform: translateY(-10px);
+}
+.l3 {
+  transform: translateY(10px);
+}
+.nav-toggler.active .l1 {
+  transform: translateY(0px) rotate(135deg);
+}
+.nav-toggler.active .l2 {
+  opacity: 0;
+}
+.nav-toggler.active .l3 {
+  transform: translateY(0px) rotate(-135deg);
+}
+
+/* Navigation Menu */
+/* nav {
+  position: fixed;
+  width: 100vw;
+  min-height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #d9d9d9;
+  transform: translateY(-100%);
+  transition: transform 0.3s cubic-bezier(0.73, 0.11, 0.67, 0.84);
+} */
+nav.active {
+  transform: translate(0);
+  opacity: 1 !important;
+}
+nav a {
+  font-family: "Diphylleia", sans-serif;
+  font-size: 20px;
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+.hlogo {
+  height: 150px;
+}
+
+/*Texte Colors */
+.colors {
+  color: white;
+}
+/* Ajout effet de soulignement sous les rubiques de la bar de nav */
+.colorsss {
+  text-decoration: none;
+  position: relative;
+  display: inline-block; /* S'assure que l'élément prend la largeur du texte */
+  color:black;
+} 
+
+
+.colorsss::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 2px;
+  background-color:rgba(0, 0, 0, 0.678);/* Couleur du trait */
+  bottom: -5px;
+  left: 0; /* Le trait commence à gauche du texte */
+  transition: width 0.3s ease;
+}
+
+.colorsss:hover::after {
+  width: 100%; /* Le trait couvre toute la largeur du texte */
+}
+
+/* Responsive Design */
+
+@media (max-width: 450px) {
+  .hlogggin {
+      text-align: center; /* Centre le contenu pour petits écrans */
+  }
+  .zxdroite {
+      display: flex;
+      flex-direction: column; /* Aligne les éléments en colonne */
+      justify-content: center !important;
+      align-items: center !important; /* Centre les éléments horizontalement */
+      gap: 5px; /* Espacement uniforme entre chaque élément */
+      margin-left: 30px;
+  }
+  .zxdroite img, .zxdroite span, .zxdroite a {
+      margin: 0; /* Supprime toute marge par défaut */
+      padding: 0; /* Supprime le padding pour éviter des espaces non désirés */
+  }
+  .roundedImage {
+      width: 40px;
+      height: 40px;
+      margin-bottom: 5px; /* Espace minimal sous l'avatar */
+  }
+  .zxfirstname {
+      margin-top: 0; /* Supprime le margin-top du pseudo */
+  }
+  .loggouts, .zxadmin {
+      margin-top: 5px; /* Espace minimal entre les icônes */
+      margin-left: 0; /* Supprime toute marge à gauche */
+    }
+    /* Ajuste la taille des icônes pour un alignement uniforme */
+    .fa-user-tie, .fa-power-off, .fa-laptop {
+      font-size: 1.2em; /* Ajuste la taille des icônes si nécessaire */
+    }
+    
+  }
+  /* bouton loggin/logout/dashboard */
+  .hlogggin {
+    display: flex;
+    justify-content: center;
+  }
+  .roundedImage {
+    border-radius: 50%;
+    height: 25px;
+    width: 25px;
+    margin-left: 5px; /* Espace contrôlé entre avatar et pseudo */
+  }
+  .zxfirstname {
+    color: black;
+    margin-left: 5px; /* Ajout d'un espace contrôlé à la place de &ensp; */
+  }
+  .loggouts {
+    color: black;
+    font-weight: bold;
+  }
+  .loggouts:hover {
+    color: red;
+  }
+  .zxadmin {
+    color: black;
+  }
+  .zxadmin:hover {
+    color: green;
+  }
+  
+  .zwlogo {
+    padding-left: 65px !important;
+    padding-right: 0px !important;
+  }
+  .mylog {
+    color: black;
+    
+  }
+  .mylog:hover {
+    color: green;
+  }
+@media(max-width: 450px) {
+.mylog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row; /* pour les icônes en ligne */
+
+}
+}
+@media (max-width: 768px) {
+  .hlogggin {
+      margin-top: 10px;
+  }
+  .hhlogo {
+      height: 150px;
+      margin-right: 30px;
+  }
+  .hlogo {
+      height: 150px;
+  }
+  nav a {
+      font-size: 12px !important;
+  }
+
+  .nav-toggler {
+      top: 20px;
+      left: 20px;
+  }
+  .title1 {
+    font-size: 50px;
+}
+.title1a {
+    font-size: 25px;
+    margin-right: 80px;
+}
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+ padding-bottom: 2px;
+}
+
+}
+
+@media (max-width: 576px) {
+  .hhlogo {
+      height: 200px;
+      margin-right: 20px;
+  }
+  .hlogo {
+      height: 120px;
+  }
+  nav a {
+      font-size: 15px !important;
+  }
+  .nav-toggler {
+      top: 24px;
+      left: 15px;
+      height: 40px;
+      width: 40px;
+  }
+  .line {
+      height: 1.5px;
+      width: 4% !important;
+      font-weight: bold !important;
+  }
+  .title2 {
+      text-decoration: none;
+  }
+  .title1 {
+    font-size: 35px;
+}
+.title1a {
+    font-size: 20px;
+    margin-right: 50px;
+}
+}
+

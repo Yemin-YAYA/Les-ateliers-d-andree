@@ -1,0 +1,48 @@
+ /*modification du background de la barre du haut complete*/
+
+ .haut{
+
+   background: linear-gradient(90deg, rgb(182 145 102 / 95%) 17%, rgb(246 244 235 / 95%) 100%);
+
+    padding: 0;
+    margin-top:250px;
+
+ }
+
+
+
+ .rgpd{
+
+   font-size: 12px !important;
+
+   font-family: popins,sans-serif !important;
+
+   font-weight:bold !important; 
+
+ }
+
+.rgpd a{
+
+   font-size: 12px;
+
+   font-family: popins,sans-serif;
+
+   font-weight:bold;
+
+   color: black !important;
+
+}
+
+@media (max-width: 770px){
+
+   .rgpd{
+
+   font-size: 11px;
+
+   font-family: popins,sans-serif;
+
+   }
+
+   
+
+}

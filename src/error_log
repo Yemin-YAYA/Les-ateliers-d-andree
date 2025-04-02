@@ -1,0 +1,4 @@
+[25-Feb-2025 08:41:32 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\HttpKernel\Kernel" not found in /home/yaye3505/lesateliersdandree.fr/src/Kernel.php:8
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Kernel.php on line 8

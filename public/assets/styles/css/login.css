@@ -1,0 +1,193 @@
+/*Bouton de connexion*/
+
+.boutonLog span{
+
+  font-family: 'Diphylleia', sans-serif;
+
+  font-weight: bold;
+
+  color:black;
+
+}
+
+.boutonLog{
+
+display: block;
+
+background-color:#0588F0;
+
+border-radius: 18px;
+
+border: 4px double #1f69ec;
+
+text-align: center;
+
+width: 110px;
+
+cursor: pointer;
+
+-webkit-transition: all 0.5s;
+
+-moz-transition: all 0.5s;
+
+-o-transition: all 0.5s;
+
+transition: all 0.5s;
+
+}
+
+.boutonLog:hover{
+
+background-color:green;
+
+border: 2px solid #1f69ec;
+
+box-shadow: 10px 5px 5px rgba(0, 128, 0, 0.596);
+
+text-align: center;
+
+font-size: 18px;
+
+}
+
+/*Partie mise en forme du formulaire*/
+
+.logform {
+
+  max-width: 400px; /* ajuster cette valeur selon les besoins */
+
+  margin: 0 auto;
+
+}
+
+/*Partie bouton redirection vers formulaire de connexion*/
+
+.pasdecompte {
+
+  font-size: 12px;
+
+  display: flex;
+
+  justify-content: center;
+
+  font-family: "Poppins", sans-serif;
+
+}
+
+.inscription {
+
+  font-weight: bold;
+
+  padding-left: 5px;
+
+}
+
+.inscription:hover {
+
+  color: green;
+
+}
+
+.remember {
+
+  font-weight: bold;
+
+  font-size: 12px;
+
+  padding-top: 5px;
+
+}
+
+/*espacement*/
+
+.conexcont {
+
+  margin-top: 110px;
+
+  margin-bottom: 200px;
+
+}
+
+@media (max-width: 765px) {
+
+  .pasdecompte {
+
+    font-size: 11px;
+
+    font-family: "Poppins", sans-serif;
+
+  }
+
+  span {
+
+    font-size: 14px !important;
+
+  }
+
+  a.bouton{
+
+    font-size: 14px !important;
+
+
+
+  }
+
+  .remember {
+
+    font-size: 11px !important;
+
+  }
+  .logform {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.boutonLog{
+  width: 90px !important;
+}
+#mpoublie{
+  font-size: 11px !important;
+}
+
+
+  @media (min-width: 768px) {
+
+    .col-md-6 {
+
+        flex: 0 0 auto;
+
+        width: 0;
+
+    }
+
+    .pasdecompte {
+
+      font-size: 11px;
+
+      font-family: "Poppins", sans-serif;
+
+    }  
+  
+
+}
+
+/* bouton redirection mot de passe oublie */
+
+}
+
+#mpoublie{
+
+  font-weight:bold;
+
+  font-size: 12px;
+
+  color:black;
+
+}
+
+#mpoublie:hover{  
+
+color: green;
+
+}
+

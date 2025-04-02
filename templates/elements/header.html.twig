@@ -1,0 +1,78 @@
+<header>
+    <div class="container-fluid bord">
+        <div class="row d-flex">
+            <!-- Burger Menu Button -->
+            <div class="col-4 d-flex justify-content-start">
+                <button type="button" title="Acceder aux rubriques" aria-label="Afficher/Masquer le menu" aria-expanded="false" class="nav-toggler" style="margin-top: 25px;">
+                    <span class="line l1"></span>
+                    <span class="line l2"></span>
+                    <span class="line l3"></span>
+                </button>
+            </div>
+
+            <!-- Navigation Menu -->
+            <nav class="zindex" aria-label="Menu de navigation">
+                <ul>
+                    <li class="nav-item dropdown">
+                        <a class="colorsss" href="{{ path('posts_by_rubrik', {id: 1}) }}" role="button" aria-controls="nav-sacs" aria-expanded="false">
+                            Sacs
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="colorsss" href="{{ path('posts_by_rubrik', {id: 2}) }}" role="button" aria-controls="nav-hygiene" aria-expanded="false">
+                            Hygiène & Beauté
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="colorsss" href="{{ path('posts_by_rubrik', {id: 3}) }}" role="button" aria-controls="nav-enfant" aria-expanded="false">
+                            Enfant
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="colorsss" href="{{ path('posts_by_rubrik', {id: 4}) }}" role="button" aria-controls="nav-sublimation" aria-expanded="false">
+                            Sublimation
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="colorsss" href="{{ path('app_contact') }}" role="button" aria-controls="nav-contact" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Logo -->
+            <div class="col-4 text-center">
+                <a class="navbar-brand mr-3" href="{{ path('app_post') }}" title="Retour à l'acceuil">
+                    <img class="hlogo" src="{{ asset('divers/images/logo.png') }}" alt="Logo" loading="lazy">
+                </a>
+            </div>
+
+            <!-- User and Social Links -->
+            <div class="col-4 text-end hlogggin">
+                <div class="header-social-links d-flex justify-content-end align-items-center zxdroite">
+                    {% if app.user %}
+                        {% if app.user.avatar is empty %}
+                            <i class="fa-solid fa-user-tie ms-3" aria-label="Utilisateur connecté avec ou sans avatar"></i>
+                        {% else %}
+                            <img class="roundedImage ms-3" src="{{ asset('divers/avatars/' ~ app.user.avatar) }}" alt="Avatar de {{ app.user.pseudo }}">
+                            <span class="zxfirstname ms-3">{{ app.user.pseudo|capitalize }}</span>
+                        {% endif %}
+                        <a class="loggouts ms-3" href="{{ path('app_logout') }}" title="Déconnexion" aria-label="Se déconnecter">
+                            <i class="fa-solid fa-power-off"></i>
+                        </a>
+                        {% if app.user.opption == 'yes' %}
+                            <a class="zxadmin ms-3" href="{{ path('admin') }}" title="Espace administrateur" aria-label="Accéder à l'administration">
+                                <i class="fa-solid fa-laptop"></i>
+                            </a>
+                        {% endif %}
+                    {% else %}
+                        <a class="mylog" style="margin-top: 10px;" href="{{ path('app_login') }}" aria-label="S'inscrire ou se connecter" title="S'inscrire ou se connecter">
+                            <i class="fa-solid fa-user login"></i>
+                        </a>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</header>

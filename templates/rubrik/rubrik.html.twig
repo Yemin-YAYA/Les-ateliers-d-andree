@@ -1,0 +1,79 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+	{{ rubrik.name }}
+{% endblock %}
+
+{% block body %}
+
+	<div class="container-fluid">
+		<div class="container">
+			{% if breadcrumbs is defined %}
+				{% include 'filedariane/breadcrumbs.html.twig' %}
+			{% endif %}
+			<div class="titler">
+				<h1>{{ rubrik.name }}</h1>
+			</div>
+          
+         
+		<div class="row respace">
+    {% for posts in posts %}
+        <div class="col-md-4 ">
+            <a class="rpost skill text-decoration-none rbox" href="{{ path('show', {'slug': posts.slug, 'id': posts.id}) }}">
+                <div class="row flex-column">
+                    {% if posts.image1 is not empty %}
+                        <div class="p-0 hr mb-2">
+                            <img class="img-fluid rimg" src="{{ asset('divers/images/' ~ posts.image1) }}" alt="Première image du post" loading="lazy"/>
+                        </div>
+                    {% endif %}
+                    {% if posts.image2 is not empty %}
+                        <div class="p-0 hr">
+                            <img class="img-fluid rimg" src="{{ asset('divers/images/' ~ posts.image2) }}" alt="Deuxième image du post" loading="lazy"/>
+                        </div>
+                    {% endif %}
+                </div>
+                <div class="col-md-12 mt-4 rdate">
+                    le {{ posts.createdAt|date('d/m/Y') }}
+                </div>
+                <div class="col-md-12 zushow">
+                    {{ posts.title }}
+                </div>
+            </a>
+        </div>
+    {% endfor %}
+</div>
+	
+
+		</div>
+       {% if totalPages > 1 %}
+    <nav aria-label="Pagination">
+        <ul class="pagination justify-content-center mt-4">
+            {% if currentPage > 1 %}
+                <li class="page-item">
+                    <a class="page-link text-white bg-secondary" href="{{ path('posts_by_rubrik', { 'id': rubrik.id, 'page': currentPage - 1 }) }}" rel="prev">
+                        &laquo; Précédent
+                    </a>
+                </li>
+            {% endif %}
+
+            {% for i in 1..totalPages %}
+                <li class="page-item {% if i == currentPage %}active{% endif %}">
+                    <a class="page-link {% if i == currentPage %}bg-primary text-white{% else %}bg-secondary text-white{% endif %}" href="{{ path('posts_by_rubrik', { 'id': rubrik.id, 'page': i }) }}" {% if i == currentPage %} aria-current="page" {% endif %}>
+                        {{ i }}
+                    </a>
+                </li>
+            {% endfor %}
+
+            {% if currentPage < totalPages %}
+                <li class="page-item">
+                    <a class="page-link text-white bg-secondary" href="{{ path('posts_by_rubrik', { 'id': rubrik.id, 'page': currentPage + 1 }) }}" rel="next">
+                        Suivant &raquo;
+                    </a>
+                </li>
+            {% endif %}
+        </ul>
+    </nav>
+{% endif %}
+	</div>
+
+{% endblock %}

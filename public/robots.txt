@@ -1,0 +1,6 @@
+User-agent: *
+
+Allow: /
+
+Sitemap: https://lesateliersdandree.fr/sitemap.xml
+

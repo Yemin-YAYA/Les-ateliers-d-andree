@@ -1,0 +1,304 @@
+
+body {
+  position: relative;
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
+
+.container-fluid {
+  max-width: 100%;
+  overflow-x: visible !important;
+}
+
+
+body {
+  background-color: #D9D9D9;
+}
+              /*Partie carousel*/
+.carousel img {
+  width: 100%; /* Ajuste l'image à la largeur du conteneur */
+  height: auto; /* Maintient le ratio d'aspect de l'image */
+}
+.carousel-inner{
+  border-radius: 10px;
+}
+
+#carouselExampleSlidesOnly {
+margin-top: 20px;
+margin-bottom: 35px;
+}
+              /*Partie presentation*/
+.titledusite{
+  font-family: 'Diphylleia', sans-serif;
+  text-decoration: underline;
+  text-decoration-thickness: 2.5px;
+  text-align: center;
+  font-size: 45px;
+  margin-bottom: 50px;
+  margin-top: -40px;
+}
+.col-md-6 {
+  text-align: center;
+}
+#para1 {
+  font-family: "Poppins", sans-serif;
+  margin-top: 20px;
+  font-size: 14px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.corp1 {
+  margin-top: 50px;
+}
+              /*Partie contact*/
+#titresection {
+  font-family: 'Diphylleia', sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+#infos {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  letter-spacing: 1px;
+  text-align: justify;
+  margin-bottom: 0;
+}
+.email-link {
+  color: black; /* Couleur noire par défaut */
+  text-decoration: none; /* Supprime le soulignement */
+}
+
+.email-link:hover {
+  color: blue; /* Couleur bleue au survol */
+  text-decoration: underline; /* Optionnel : souligner au survol */
+}
+.logos1 {
+  width: 65px;
+  margin: 0
+}
+.logos2 {
+  width: 100px;
+  padding-top: 10px;
+}
+
+.metrouver h3{
+  font-family: 'Diphylleia', sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+
+}
+.contacte {
+  display: flex;
+  flex-direction: column !important;
+  align-items: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.zcom {
+  margin-bottom: 100px;
+}
+               /*Partie vous avez des question*/
+.titlequest{
+  font-family: 'Diphylleia', sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.question {
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  
+}
+
+.leaflet-popup-content-wrapper{
+    max-width: 200px;
+    margin-left:25px;
+  }
+/*Partie Map nous trouver*/
+.adresse {
+  text-align: right;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+}
+
+a.link-contact{
+  text-decoration: none;
+  color: inherit;
+  font-weight: bold;
+}
+.link-contact:hover {
+  color: red; /* Change la couleur en rouge au survol */
+}
+      /*MAP*/
+#map {
+  width: 100%;  
+  height: 400px; /* Ajuste la hauteur si nécessaire */
+  margin: 0 auto;
+  border: 2.5px solid rgba(0, 0, 0, 0.534);
+  box-shadow: rgba(0, 0, 0, 0.534);
+  -webkit-box-shadow: inset -1px 3px 8px 5px black, 2px 5px 16px 0px black, 5px 5px 46px 32px rgba(0, 0, 0, 0.17);
+  box-shadow: inset -1px 3px 8px 5px white, 2px 5px 16px 0px black, 5px 5px 46px 32px rgba(0, 0, 0, 0.17);
+  position: relative;
+  z-index: 1; 
+}
+.leaflet-container {
+  z-index: 0 !important; /* On s'assure que la carte reste bien en dessous */
+}
+
+.leaflet-pane {
+  z-index: 0 !important; /* Pour les couches internes de Leaflet */
+}
+          /* Partie row maps*/
+.cadre {
+  margin-top: 100px;
+  background-color: rgba(255, 255, 255, 0.592);
+  border-radius: 10px;
+  box-shadow: gray;
+  -webkit-box-shadow: inset -1px 3px 8px 5px black, 2px 5px 16px 0px black, 5px 5px 46px 32px rgba(0, 0, 0, 0.17);
+  box-shadow: inset -1px 3px 8px 5px white, 2px 5px 16px 0px black, 5px 5px 46px 32px rgba(0, 0, 0, 0.17);
+}
+/*Bouton de redirection vers formulaire de contact*/
+.boutonContact{
+  display: block;
+  background-color:#0588F0;
+  border-radius: 18px;
+  border: 4px double #1f69ec;
+  text-align: center;
+  font-size: 14px;
+  width: 150px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.boutonContact{
+  display: block;
+  background-color:rgb(220, 53, 69);
+  border-radius: 18px;
+  border: 4px double rgb(233, 10, 10);
+  text-align: center;
+  padding: 10px;
+  width: 170px;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+}
+.boutonContact:hover{
+  background-color:green;
+  border: 2px solid green;
+  box-shadow: 10px 5px 5px rgba(255, 0, 0, 0.466);
+  text-align: center;
+  font-size: 16px;
+}
+             
+.ucta {
+  position: relative;
+  margin-left: 100px;
+  padding: 16px;
+  transition: all 0.2s ease;
+  overflow: visible;
+  display: flex;  /* Utilisé pour aligner le texte et la flèche horizontalement */
+  align-items: center;  /* Aligne verticalement le texte et la flèche */
+}
+
+.ucta span {
+  position: relative;
+  font-family: 'Diphylleia', sans-serif !important;
+  text-decoration: none !important;
+  font-size: 13px !important;
+  font-weight: bold;
+  line-height: 18px;  
+  color: black;  
+  text-transform: uppercase;
+  width: 132px;
+ 
+}
+             /* Responsive design  */
+@media(max-width:1070px){
+  #map{
+    height: 250px !important;      
+  }
+  .leaflet-popup-content-wrapper{
+    max-width: 200px;
+    margin-left:25px;
+  }
+  
+  .cadre{
+    margin-top:20px;
+  }
+  .titlequest{
+    font-family: 'Diphylleia', sans-serif;
+    margin-bottom: 20px;
+    font-size:20px ;
+    font-weight: bold;
+  }
+  .corp1{
+    margin-top: 50px;
+    font-family: "Poppins", sans-serif;
+  }
+  .titledusite{
+    font-size: 30px;
+    font-family: 'Diphylleia', sans-serif;
+  }
+  #para1{    
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 12px;
+    text-align: left; /* Évite la justification si elle est active */
+    word-spacing: normal; /* Remet un espacement normal entre les mots */
+    letter-spacing: normal; /* Remet un espacement normal entre les lettres */
+  }
+ .titlecarousel h3{
+  font-size: 20px;
+ }
+ .btn-danger{
+    font-size: medium;
+ }
+ #carouselExampleSlidesOnly{
+  margin-top: 40px;
+  margin-bottom: 50px;
+ }
+ .question{
+  font-size: 12px;
+  font-family: "Poppins", sans-serif;
+ }
+ #titresection{
+  font-size:15px ;
+  font-weight:bolder;
+  font-family: 'Diphylleia', sans-serif;
+ }
+ .logos1{
+  width: 10%;
+ }
+ .logos2{
+  width: 15%;
+
+ }
+ #infos{
+  font-size: 12px;
+ }
+ .metrouver h3{
+  font-size: 19px;
+  font-family: 'Diphylleia', sans-serif;
+ }
+ .adresse{
+  font-size: 12px;
+ }
+ .ucta span{
+  font-size: 10px !important;
+  font-family: 'Diphylleia', sans-serif !important;
+  width: 140px !important;
+ }
+ .ucta-icon {
+  padding-top: 5px;
+ }
+}

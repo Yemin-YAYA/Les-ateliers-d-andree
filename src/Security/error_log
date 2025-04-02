@@ -1,0 +1,4 @@
+[25-Feb-2025 08:41:45 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Security\Http\Authenticator\AbstractLoginFormAuthenticator" not found in /home/yaye3505/lesateliersdandree.fr/src/Security/UsersAuthenticator.php:19
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Security/UsersAuthenticator.php on line 19

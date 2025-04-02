@@ -1,0 +1,25 @@
+<div id="carouselExampleSlidesOnly" class="carousel slide col-md-8 mx-auto" data-bs-ride="carousel" data-bs-interval="2500" style="max-width: 700px;">
+	<div class="carousel-inner">
+		{% for post in posts %}
+			<div class="carousel-item {% if loop.first %}active{% endif %}">
+				<img src="{{ asset('divers/images/' ~ post.image1) }}" class="img-fluid" style="width: 100%; height: auto;" alt="{{ post.title }}" loading="lazy">
+
+				<div class="carousel-caption d-block">
+					<div class="titlecarousel">
+						<h3>{{ post.title }}</h3>
+					</div>
+					<a href="{{ path('show', {'slug':post.slug, id: post.id})}}" class="btn btn-danger btn-lg mt-2 " title="Voir la création">Voir +
+					</a>
+				</div>
+			</div>
+		{% endfor %}
+	</div>
+	<a class="carousel-control-prev" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="prev">
+		<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Previous</span>
+	</a>
+	<a class="carousel-control-next" href="#carouselExampleSlidesOnly" role="button" data-bs-slide="next">
+		<span class="carousel-control-next-icon" aria-hidden="true"></span>
+		<span class="visually-hidden">Next</span>
+	</a>
+</div>

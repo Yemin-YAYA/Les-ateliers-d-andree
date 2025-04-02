@@ -1,0 +1,201 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block title %}Les Ateliers d'Andrée, l'art de la couture.{% endblock %}
+
+
+
+{% block body %}
+
+	<div class="container-fluid mt-2 ">
+
+		<div class="row">
+
+			<div class="col-md-3" aria-hidden="true"></div>
+
+			<div class="col-md-6">
+
+				<div class="corp1">
+
+					<h1 class="titledusite">Les Ateliers d'Andrée</h1>
+
+					<p id="para1">
+
+						Après une longue carrière dans l'univers de la tissuterie, où j'ai mené divers ateliers de couture, broderie, flocage, etc., ma passion pour la création et tout ce qui touche à la couture et à la sublimation s'est affirmée comme une évidence. Sur ce site, je vous invite à explorer cette passion à travers mes réalisations uniques et entièrement personnalisables. Que ce soit pour le choix des tissus, des matériaux, des couleurs ou des motifs, la seule limite est votre imagination ! N'attendez plus pour me contacter et donner vie à vos idées les plus créatives.
+
+					</p>
+
+				</div>
+
+			</div>
+
+			<div class="col-md-3" aria-hidden="true"></div>
+
+		</div>
+
+	</div>
+
+	<!-- Carrousel-->
+
+	<div class="container">
+
+		{% include 'pages/carousel.html.twig' %}
+
+	</div>
+
+	<div class="container">
+
+		<div class="row">
+
+			<div class="col-md-2" aria-hidden="true"></div>
+
+			<div class="col-md-8">
+
+				<div>
+
+					<h2 class="titlequest">Vous avez des questions ?</h2>
+
+					<p class="question">
+
+						Pour toute question ou projet, je suis à votre entière disposition. N'hésitez pas à
+
+						<a href="{{ path('app_contact') }}" class="link-contact">me contacter</a>
+
+						; je me ferai un plaisir de répondre à vos demandes qu’il s’agisse de simples travaux de couture ou de créations sur mesure. Ensemble, donnons vie à vos aspirations les plus audacieuses.
+					</p>
+
+
+
+				</div>
+
+			</div>
+
+			<div class="col-md-2" aria-hidden="true"></div>
+
+		</div>
+
+	</div>
+
+	<div class="container zcom mt-2">
+
+		<div class="row">
+
+			<!-- Section 1: Section contact par Facebook ou Instagram -->
+
+			<div class="col-md-4 contacte">
+
+				<img src="divers/images/chat.png" alt="Icône de chat pour contacter Les Ateliers d'Andrée" width="200" height="150" class="img-fluid logos2" loading="lazy"/>
+
+				<p id="titresection">Par chat.</p>
+
+				<p id="infos">
+
+					Rendez-vous sur ma page FB et Instagram (lien en bas de page) ou via le formulaire de contact.
+
+				</p>
+
+			</div>
+
+
+
+			<!-- Section 2: Section contact par téléphone -->
+
+			<div class="col-md-4 contacte">
+
+				<img src="divers/images/Icone_telephone.png" alt="Icône de téléphone pour contacter Les Ateliers d'Andrée" class="img-fluid logos1 mb-2" loading="lazy"/>
+
+				<p id="titresection">Par téléphone.</p>
+
+				<p id="infos">06.85.51.80.10</p>
+
+			</div>
+
+
+
+			<!-- Section 3: Contact par courriel -->
+
+			<div class="col-md-4 contacte">
+
+				<img src="divers/images/mail.png" alt="Icône d'email pour contacter Les Ateliers d'Andrée" class="img-fluid logos1" loading="lazy"/>
+
+				<p id="titresection">Par courriel.</p>
+
+				<p id="infos">
+
+					<a href="mailto:lesateliersdandree79@gmail.com" class="email-link">lesateliersdandree79@gmail.com</a>
+
+				</p>
+
+
+
+			</div>
+
+		</div>
+
+
+
+		<!-- Conteneur avec la carte et la section "Contacter-moi" côte à côte -->
+
+		<div class="container zcom mt-4">
+
+			<div class="row cadre">
+
+				<div class="col-12 text-center mb-4">
+
+					<div class="metrouver">
+
+						<h3>Me trouver</h3>
+
+					</div>
+
+				</div>
+
+				<!-- Colonne pour la carte -->
+
+				<div class="col-md-6 mb-3 mt-3 carte">
+
+					<div class="map-container">
+
+						<div id="map" title="Carte avec la localisation des Ateliers d'Andrée"></div>
+
+					</div>
+
+				</div>
+
+
+
+				<!-- Colonne pour la section "Contacter-moi" -->
+
+				<div class="col-md-6 d-flex flex-column align-items-center justify-content-center">
+
+					<a class="ucta" href="{{ path('app_contact') }}" title="Pour me contacter">
+
+						<div>
+
+							<span class="boutonContact">Contactez-moi</span>
+
+						</div>
+
+					</a>
+
+					<p class="adresse">
+
+						Les Ateliers d’Andrée<br>
+
+						3 Chemin des Coteaux de Ribray<br>
+
+						79000 NIORT
+
+					</p>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+{% endblock %}
+

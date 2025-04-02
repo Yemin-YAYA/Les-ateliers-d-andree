@@ -1,0 +1,20 @@
+[25-Feb-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Form\AbstractType" not found in /home/yaye3505/lesateliersdandree.fr/src/Form/CommentFormType.php:15
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Form/CommentFormType.php on line 15
+[25-Feb-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Form\AbstractType" not found in /home/yaye3505/lesateliersdandree.fr/src/Form/ContactType.php:17
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Form/ContactType.php on line 17
+[25-Feb-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Form\AbstractType" not found in /home/yaye3505/lesateliersdandree.fr/src/Form/RegistrationFormType.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Form/RegistrationFormType.php on line 22
+[25-Feb-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Form\AbstractType" not found in /home/yaye3505/lesateliersdandree.fr/src/Form/ResetPasswordFormType.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Form/ResetPasswordFormType.php on line 13
+[25-Feb-2025 08:41:44 UTC] PHP Fatal error:  Uncaught Error: Class "Symfony\Component\Form\AbstractType" not found in /home/yaye3505/lesateliersdandree.fr/src/Form/ResetPasswordRequestFormType.php:10
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/src/Form/ResetPasswordRequestFormType.php on line 10

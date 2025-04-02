@@ -1,0 +1,94 @@
+{% extends "@EasyAdmin/page/content.html.twig" %}
+
+{% block content %}
+    <div style="background-image: url('{{ asset('divers/images/dashboardImage.png') }}'); 
+                background-size: cover; 
+                background-position: center; 
+                background-repeat: no-repeat; 
+                height: 100vh; 
+                width: 100%;">
+        
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <div style="background-color: rgba(0, 0, 0, 0.5); padding: 20px; display: inline-block;">
+                    <h1>L'espace d'administration</h1>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Conteneur pour le tableau avec scroll horizontal -->
+    <div class="table-container">
+        <div class="table-responsive"> 
+            {{ parent() }} <!-- Inclut le tableau EasyAdmin -->
+        </div>
+    </div>
+
+    <style>
+        @import url('https://fonts.cdnfonts.com/css/diphylleia');
+
+        html, body {
+            height: 100%;
+            margin: 0;
+            overflow-x: hidden; /* Suppression du scroll horizontal global */
+            overflow-y: auto; /* Permet le scroll vertical */
+        }
+
+        aside.content-top.ea-search-disabled {
+            background-color: white;
+        }
+
+        h1 {
+            font-weight: bold;
+            font-family: "Diphylleia", sans-serif;
+            text-align: center;
+            color: white;
+            font-size: 40px;
+        }
+
+        div.content-wrapper {
+            padding: 0;
+            overflow-x: auto; /* Ajout du scroll horizontal uniquement au conteneur du tableau */
+            width: 100%;
+        }
+
+        .table-container {
+            max-width: 100%;
+            overflow-x: auto; /* Permet le scroll horizontal uniquement pour le tableau */
+            display: block;
+            padding: 10px;
+        }
+
+        .table-responsive {
+            display: block;
+            width: 100%;
+            overflow-x: auto;
+        }
+
+        table {
+            min-width: 100%;
+            white-space: nowrap; /* Empêche les retours à la ligne dans les cellules */
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: center;
+            word-break: break-word; /* Coupe les longs mots */
+        }
+
+        table img {
+            max-width: 80px; /* Réduction de la taille des images */
+            height: auto;
+        }
+
+        /* Masquer certaines colonnes sur mobile */
+        @media (max-width: 768px) {
+            table th:nth-child(4),
+            table td:nth-child(4) {
+                display: none; /* Remplace 4 par l'index des colonnes à cacher */
+            }
+        }
+    </style>
+{% endblock %}
+

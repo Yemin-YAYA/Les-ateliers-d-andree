@@ -1,0 +1,48 @@
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240821134930.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240821134930.php on line 13
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240821135434.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240821135434.php on line 13
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822085338.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822085338.php on line 13
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822091044.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822091044.php on line 13
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822091230.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822091230.php on line 13
+[25-Feb-2025 08:41:29 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822092645.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822092645.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822092814.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822092814.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822093610.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822093610.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822093720.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240822093720.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240826081750.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240826081750.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240902124158.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20240902124158.php on line 13
+[25-Feb-2025 08:41:30 UTC] PHP Fatal error:  Uncaught Error: Class "Doctrine\Migrations\AbstractMigration" not found in /home/yaye3505/lesateliersdandree.fr/migrations/Version20241105133452.php:13
+Stack trace:
+#0 {main}
+  thrown in /home/yaye3505/lesateliersdandree.fr/migrations/Version20241105133452.php on line 13

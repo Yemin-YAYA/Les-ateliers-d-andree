@@ -1,0 +1,116 @@
+
+
+.mainreset{
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    justify-content: center;
+
+    min-height: 100vh;
+
+    
+
+}
+
+.reset{
+
+    text-align: center; 
+
+    margin-bottom: 50px;
+
+    font-family: 'Diphylleia', sans-serif;
+
+    font-weight: bold;
+
+    font-size: 27px;
+
+}
+
+
+
+
+
+ .form-container {
+
+    width: 100%;
+
+    max-width: 400px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+}
+
+
+
+.form-control {
+
+    width: 100% !important; /* Assure que le champ occupe toute la largeur du conteneur */
+
+    padding: 10px;
+
+    font-size: 16px;
+
+    border: 1px solid #ccc;
+
+    border-radius: 4px;
+
+    margin-bottom: 10px; /* Espacement entre les champs */
+
+}
+
+
+
+
+
+.mainreset button[type="submit"] {
+
+background-color:#0588F0;
+
+border-radius: 18px;
+
+border: 4px double #1f69ec;
+
+text-align: center;
+
+font-size: 14x;
+
+width: 110px;
+
+cursor: pointer;
+
+-webkit-transition: all 0.5s;
+
+-moz-transition: all 0.5s;
+
+-o-transition: all 0.5s;
+
+transition: all 0.5s;
+
+}
+
+
+
+.mainreset button[type="submit"]:hover {
+
+    background-color:green;
+
+    border: 2px solid #1f69ec;
+
+    box-shadow: 10px 5px 5px rgba(0, 128, 0, 0.596);
+
+    text-align: center;
+
+    font-size: 18px;
+
+}
+
