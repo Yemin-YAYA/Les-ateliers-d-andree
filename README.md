@@ -1,7 +1,7 @@
 # <img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="180"> &nbsp;&nbsp;&nbsp; Les Ateliers d’Andrée
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.
-> Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.  
+> Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.<br>  
 > Réalisé avec **Symfony**, il met en avant le savoir-faire de l’atelier à travers des créations uniques, entièrement personnalisables.
 
 ---
@@ -24,11 +24,14 @@ Le design du site a été pensé pour refléter la douceur, l’élégance et la
 - **Twig** (moteur de templates)
 - **CSS3 / Bootstrap 5**
 - **JavaScript**
+- **MySQL / SQL**(Base de données relationnelle)  
+- **02Switch** (Hébergement web complet) 
+- **WinSCP** (transfert de fichiers FTP sécurisé)
 - **Leaflet.js** (carte interactive)
 - **Tarteaucitron.js** (gestion des cookies)
 - **Font Awesome** (icônes)
 - **Google Fonts** (Poppins, Diphylleia)
-
+  
 ---
 
 ## ✨ Fonctionnalités principales
