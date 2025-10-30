@@ -1,6 +1,6 @@
 # <img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="180"> &nbsp;&nbsp;&nbsp; Les Ateliers d’Andrée<br><br>
 
-> Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.<br>
+> Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.<br><br>
 > Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.
 > Réalisé avec **Symfony**, il met en avant le savoir-faire de l’atelier à travers des créations uniques, entièrement personnalisables.
 
