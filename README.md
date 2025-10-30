@@ -1,7 +1,7 @@
 <div align= "center">
 
 # [<img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="205" style="vertical-align:middle;">](https://lesateliersdandree.fr/)
-&nbsp;&nbsp;&nbsp; 
+&nbsp;&nbsp; 
 
 </div>
 
