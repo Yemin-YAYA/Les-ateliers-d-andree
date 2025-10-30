@@ -8,15 +8,15 @@
 🖱️ **Cliquez sur le logo pour visiter le site** <br><br>
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.<br><br>
-> Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.
-> Réalisé avec **Symfony**, il met en avant le savoir-faire de l’atelier à travers des créations uniques, entièrement personnalisables.
+> Site vitrine présentant l’univers de la couture, de la création et de la sublimation personnalisée d'un artisan.
+> Réalisé avec **Symfony**, il met en avant le savoir-faire de son atelier à travers des créations uniques, entièrement personnalisables.
 
 
 ---
 
 ## 🌸 À propos du projet
 
-**Les Ateliers d’Andrée** est un site vitrine conçu pour valoriser le travail artisanal autour de la couture et de la sublimation.  
+**Les Ateliers d’Andrée** est un site vitrine conçu pour valoriser le travail de l'artisan autour de la couture et de la sublimation.  
 L’objectif est de permettre aux visiteurs de :
 - Découvrir les réalisations (sacs, accessoires, retouches, broderies, etc.)
 - Prendre contact facilement pour une commande, une question...
