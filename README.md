@@ -5,8 +5,6 @@
 
 </div>
 
-<br>
-
 🖱️ **Cliquez sur le logo pour visiter le site** <br><br>
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.<br><br>
