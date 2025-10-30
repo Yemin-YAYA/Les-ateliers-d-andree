@@ -1,5 +1,9 @@
-# [<img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="180" style="vertical-align:middle;">](https://lesateliersdandree.fr/)
-&nbsp;&nbsp;&nbsp; **Les Ateliers d’Andrée**
+<div align= "center">
+
+# [<img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="200" style="vertical-align:middle;">](https://lesateliersdandree.fr/)
+&nbsp;&nbsp;&nbsp; 
+
+</div>
 
 <br>
 
