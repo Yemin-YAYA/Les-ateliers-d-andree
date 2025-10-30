@@ -1,13 +1,13 @@
 <div align= "center">
 
-# [<img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="200" style="vertical-align:middle;">](https://lesateliersdandree.fr/)
+# [<img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="205" style="vertical-align:middle;">](https://lesateliersdandree.fr/)
 &nbsp;&nbsp;&nbsp; 
 
 </div>
 
 <br>
 
-🖱️ *Cliquez sur le logo pour visiter le site :* <br><br>
+🖱️ **Cliquez sur le logo pour visiter le site** <br><br>
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.<br><br>
 > Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.
