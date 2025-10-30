@@ -19,7 +19,7 @@
 **Les Ateliers d’Andrée** est un site vitrine conçu pour valoriser le travail artisanal autour de la couture et de la sublimation.  
 L’objectif est de permettre aux visiteurs de :
 - Découvrir les réalisations (sacs, accessoires, retouches, broderies, etc.)
-- Prendre contact facilement pour une commande personnalisée
+- Prendre contact facilement pour une commande, une question...
 - Être informés des disponibilités de l’atelier et des événements (marchés, périodes de congé, etc.)
 
 Le design du site a été pensé pour refléter la douceur, l’élégance et la passion du travail fait main.
