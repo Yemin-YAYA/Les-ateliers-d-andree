@@ -1,4 +1,4 @@
-# <img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="150"> &nbsp;&nbsp;&nbsp; Les Ateliers d’Andrée
+# <img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="180"> &nbsp;&nbsp;&nbsp; Les Ateliers d’Andrée
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.
 > Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.  
