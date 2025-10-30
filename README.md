@@ -1,4 +1,4 @@
-# 🧵 Les Ateliers d’Andrée
+# <img src="./public/divers/images/logo.png" alt="Logo Les Ateliers d'Andrée" width="40" style="vertical-align: middle; margin-right: 10px;"> Les Ateliers d’Andrée Les Ateliers d’Andrée
 
 > Il s’agit de mon **premier projet à la sortie de l’école**, conçu dans le but de mettre en pratique mes compétences en développement web tout en créant un site réellement utile à un artisan.
 > Site vitrine artisanal présentant l’univers de la couture, de la création et de la sublimation personnalisée.  
@@ -41,5 +41,4 @@ Le design du site a été pensé pour refléter la douceur, l’élégance et la
 - 🍪 Gestion RGPD via Tarteaucitron.js  
 - 📱 Design responsive (compatible mobile, tablette et ordinateur)
 
----
 
