@@ -46,7 +46,7 @@ Le design du site a été pensé pour refléter la douceur, l’élégance et la
 
 - 🪡 Présentation de l’atelier et des créations  
 - 📸 Galerie dynamique avec carrousel 
-- 📍 Carte interactive “Nous trouver” (Leaflet + OpenStreetMap)  
+- 📍 Carte interactive “Nous trouver” (Leaflet)  
 - 💬 Formulaire de contact  
 - ⚠️ Fenêtre pop-up temporaire pour les annonces (ex : indisponibilité atelier)  
 - 🍪 Gestion RGPD via Tarteaucitron.js  
